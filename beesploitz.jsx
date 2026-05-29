@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 
 // ─── Supabase Client (inline, no npm) ───────────────────────────────────────
 // NOTE: Replace these with your actual Supabase project URL and anon key
-const SUPABASE_URL = "https://biclegpilbvnejvkyjri.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJpY2xlZ3BpbGJ2bmVqdmt5anJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5NTYyODgsImV4cCI6MjA5NTUzMjI4OH0.bUC-0T8qtoeOVtJAFd7gk6Z-Wz2fsYoSCbdT0g-uYjs";
+const SUPABASE_URL = "https://zxmqfhrpkdugcvqhtlap.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp4bXFmaHJwa2R1Z2N2cWh0bGFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAwMzQ3OTcsImV4cCI6MjA5NTYxMDc5N30.U-_m4UmLHUrE8MuR93YMhWqZpAhWua4p_FRzTSn7fnE";
 
 async function supaFetch(path, opts = {}) {
   const res = await fetch(`${SUPABASE_URL}/rest/v1${path}`, {
